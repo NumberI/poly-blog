@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   resources :posts do
     resources :comments
   end
-  resource :images, only: [:new, :create], path_names: {:new => ""}
-  resource :links, only: [:new, :create], path_names: {:new => ""}
-  resource :articles, only: [:new, :create], path_names: {:new => ""}
+  resource :images, only: [:new, :create]
+  resource :links, only: [:new, :create]
+  resource :articles, only: [:new, :create]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
