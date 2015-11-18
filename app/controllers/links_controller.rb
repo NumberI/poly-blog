@@ -6,7 +6,7 @@ class LinksController < ApplicationController
   def create
     @link = Link.new(link_params)
     
-    if @image.save
+    if @link.save
       redirect_to '/'
     else
       render action: "new"
